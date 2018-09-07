@@ -159,7 +159,8 @@ namespace FastLogging
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     break;
             }
-            Console.WriteLine("[" + DateTime.Now.ToString("HH:mm:ss") + "][" + logLevel.ToString() + "]" + message);
+            // maybe we should use more descriptive time
+            Console.WriteLine("[" + DateTime.Now.ToLongTimeString() + "][" + logLevel.ToString() + "]" + message);
             Console.ResetColor();
         }
 
@@ -167,7 +168,7 @@ namespace FastLogging
         {
             if (logLevel <= _logLevel)
             {
-                _streamWriter.WriteLine("[" + DateTime.Now.ToString("dd.MM.yyyy H:mm:ss") + "][" + _loggerName + "][" + logLevel.ToString() + "]" + message);
+                _streamWriter.WriteLine("[" + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss.fff") + "][" + _loggerName + "][" + logLevel.ToString() + "]" + message);
                 _streamWriter.Flush();
             }
         }
