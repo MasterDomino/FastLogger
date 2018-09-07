@@ -167,7 +167,7 @@ namespace FastLogging
         {
             if (logLevel <= _logLevel)
             {
-                _streamWriter.WriteLine("[" + DateTime.Now.ToString("MM.dd.yyyy H:mm:ss") + "][" + _loggerName + "][" + logLevel.ToString() + "]" + message);
+                _streamWriter.WriteLine("[" + DateTime.Now.ToString("dd.MM.yyyy H:mm:ss") + "][" + _loggerName + "][" + logLevel.ToString() + "]" + message);
                 _streamWriter.Flush();
             }
         }
