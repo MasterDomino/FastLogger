@@ -1,21 +1,22 @@
-﻿using System.IO;
+﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace FastLogging
 {
-    public class Logger : ILogger
+    public static class Logger
     {
-        public LogLevel LogLevel = LogLevel.ALL;
+        public static ILog Log { get; set; }
 
-        private readonly StreamWriter _streamWriter;
+        public static void InitializeLogger(ILog log) => Log = log;
 
-        public string LogFilePath = "log.log";
+        public static void Debug(string message, [CallerMemberName] string memberName = "") => Log.Debug(message, memberName);
 
-        public Logger(string logFilePath)
-        {
-            LogFilePath = logFilePath;
-            _streamWriter = new StreamWriter(LogFilePath, true);
-        }
+        public static void Error(string message, Exception ex = null, [CallerMemberName] string memberName = "") => Log.Error(message, ex, memberName);
 
-        public Logger(string logFilePath, LogLevel logLevel) : this(logFilePath) => LogLevel = logLevel;
+        public static void Fatal(string message, Exception ex = null, [CallerMemberName] string memberName = "") => Log.Fatal(message, ex, memberName);
+
+        public static void Info(string message, [CallerMemberName] string memberName = "") => Log.Info(message, memberName);
+
+        public static void Warn(string message, Exception ex = null, [CallerMemberName] string memberName = "") => Log.Warn(message, ex, memberName);
     }
 }
