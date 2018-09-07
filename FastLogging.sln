@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging.TestConsole", "FastLogging\FastLogging.TestConsole.csproj", "{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging.Logger", "FastLogging.Logger\FastLogging.Logger.csproj", "{BF54E107-ACDB-4BB9-AB7A-186197DA238A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF54E107-ACDB-4BB9-AB7A-186197DA238A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF54E107-ACDB-4BB9-AB7A-186197DA238A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF54E107-ACDB-4BB9-AB7A-186197DA238A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF54E107-ACDB-4BB9-AB7A-186197DA238A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95DCC083-1702-49CC-BAF9-9798125EE106}
+	EndGlobalSection
+EndGlobal
