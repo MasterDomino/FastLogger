@@ -160,7 +160,7 @@ namespace FastLogging
                     break;
             }
             // maybe we should use more descriptive time
-            Console.WriteLine("[" + DateTime.Now.ToLongTimeString() + "][" + logLevel.ToString() + "]" + message);
+            Console.WriteLine("[" + DateTime.Now.ToString("HH:mm:ss.fff") + "][" + logLevel.ToString() + "]" + message);
             Console.ResetColor();
         }
 
