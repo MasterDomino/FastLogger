@@ -14,6 +14,8 @@ namespace FastLogging
 
         void Info(string message, string memberName = "");
 
+        void Shutdown();
+
         void Warn(string message, Exception ex = null, string memberName = "");
 
         #endregion

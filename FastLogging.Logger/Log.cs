@@ -92,6 +92,12 @@ namespace FastLogging
             }
         }
 
+        public void Shutdown()
+        {
+            _streamWriter.AutoFlush = true;
+            _streamWriter.Flush();
+        }
+
         public void Warn(string message, Exception ex = null, string memberName = "")
         {
             if (!string.IsNullOrWhiteSpace(message))
@@ -159,6 +165,7 @@ namespace FastLogging
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     break;
             }
+
             // maybe we should use more descriptive time
             Console.WriteLine("[" + DateTime.Now.ToString("HH:mm:ss.fff") + "][" + logLevel.ToString() + "]" + message);
             Console.ResetColor();
@@ -169,7 +176,6 @@ namespace FastLogging
             if (logLevel <= _logLevel)
             {
                 _streamWriter.WriteLine("[" + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss.fff") + "][" + _loggerName + "][" + logLevel.ToString() + "]" + message);
-                _streamWriter.Flush();
             }
         }
 

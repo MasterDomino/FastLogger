@@ -5,9 +5,13 @@ namespace FastLogging
 {
     public static class Logger
     {
+        #region Properties
+
         public static ILog Log { get; set; }
 
-        public static void InitializeLogger(ILog log) => Log = log;
+        #endregion
+
+        #region Methods
 
         public static void Debug(string message, [CallerMemberName] string memberName = "") => Log.Debug(message, memberName);
 
@@ -17,6 +21,10 @@ namespace FastLogging
 
         public static void Info(string message, [CallerMemberName] string memberName = "") => Log.Info(message, memberName);
 
+        public static void InitializeLogger(ILog log) => Log = log;
+
         public static void Warn(string message, Exception ex = null, [CallerMemberName] string memberName = "") => Log.Warn(message, ex, memberName);
+
+        #endregion
     }
 }
