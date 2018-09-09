@@ -52,7 +52,11 @@ namespace FastLogging
             }
         }
 
-        public void Dispose() => Dispose(true);
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
         public void Error(string message, Exception ex = null, string memberName = "")
         {
@@ -129,7 +133,7 @@ namespace FastLogging
 
         private void Append(string message, string memberName, LogLevel logLevel)
         {
-            if (memberName?.Length == 0)
+            if (!string.IsNullOrWhiteSpace(memberName))
             {
                 AppendToConsole(message, logLevel);
                 AppendToFile(message, logLevel);

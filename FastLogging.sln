@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging.TestConsole", "FastLogging\FastLogging.TestConsole.csproj", "{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging.TestConsole", "FastLogging.TestConsole\FastLogging.TestConsole.csproj", "{1C50A131-9AE2-489C-8CA6-B7DDE16745AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging.Logger", "FastLogging.Logger\FastLogging.Logger.csproj", "{BF54E107-ACDB-4BB9-AB7A-186197DA238A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastLogging", "FastLogging\FastLogging.csproj", "{BF54E107-ACDB-4BB9-AB7A-186197DA238A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

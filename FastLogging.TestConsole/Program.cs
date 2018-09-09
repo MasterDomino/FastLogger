@@ -16,7 +16,7 @@ namespace FastLogging.TestConsole
             Logger.Error("Test error message.");
             Logger.Fatal("Test fatal message.");
             Logger.Info("Test finished.");
-            Logger.Log.Shutdown();
+            Logger.Log.PrepareShutdown();
             Console.ReadKey();
         }
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FastLogging.Logger")]
+[assembly: AssemblyTitle("FastLogging")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FastLogging.Logger")]
+[assembly: AssemblyProduct("FastLogging")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bf54e107-acdb-4bb9-ab7a-186197da238a")]
+[assembly: Guid("1c50a131-9ae2-489c-8ca6-b7dde16745af")]
 
 // Version information for an assembly consists of the following four values:
 //

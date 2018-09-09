@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FastLogging</id>
+    <version>1.0</version>
+    <authors>MasterDomino</authors>
+    <owners>MasterDomino</owners>
+    <licenseUrl>https://eulaserv.opennos.io/dev/masterdomino/fastlogging.txt</licenseUrl>
+    <projectUrl>https://git.opennos.io/MasterDomino/FastLogging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>FastLogging library is lightning fast and lightweight library used for logging purposes.</description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>Copyright 2018 MasterDomino</copyright>
+    <tags>logging logger console</tags>
+  </metadata>
+</package>
