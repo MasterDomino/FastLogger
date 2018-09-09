@@ -92,7 +92,7 @@ namespace FastLogging
             }
         }
 
-        public void Shutdown()
+        public void PrepareShutdown()
         {
             _streamWriter.AutoFlush = true;
             _streamWriter.Flush();
